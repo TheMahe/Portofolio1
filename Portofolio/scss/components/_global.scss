@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}
+.container {
+  margin: 0 auto;
+}
+
+.slide {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last .slide {
+  min-height: 40vh;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-title h1 {
+  font-size: 2.4rem;
+}
+
+.seperator {
+  height: 1px;
+  width: 100%;
+  background-color: #ddd;
+  margin-top: 100px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+  padding-top: 100px;
+  padding-bottom: 160px;
+  margin-top: 100px;
+  z-index: 999;
+}
+
+footer .col-left span {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+footer h1 {
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 600;
+  margin-bottom: 90px;
+}
+
+footer .col-right {
+  justify-self: flex-end;
+}
+
+footer .col-right a {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+  transition: all 0.2s ease 0s, opacity 200ms ease 0s;
+}
+
+.menu a {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+}
+
+.menu:hover a {
+  opacity: 0.3;
+}
+
+.menu:hover a:hover {
+  opacity: 11;
+}
+
+footer .col-right:hover a {
+  opacity: 0.3;
+}
+
+footer .col-right:hover a:hover {
+  opacity: 1;
+}
+
+.wrapper1 {
+  display: none;
+
+  .intro {
+    margin-bottom: 20vh;
+  }
+
+  .about-me {
+    margin-bottom: 20vh;
+  }
+
+  .text-title {
+    margin-bottom: 20vh;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .hero-img {
+    height: 50vh;
+  }
+  .project2-text h1 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+  }
+  .project2-text p {
+    font-size: 1.2rem;
+  }
+  .project2-img img {
+    height: 50vh;
+    object-position: top;
+  }
+
+  .skills .title {
+    font-size: 170px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .about-me .container,
+  .project1 .container,
+  .project2 .container {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 600px;
+    padding: 75px 85px 65px;
+
+    .hero-img img {
+      object-fit: fill;
+    }
+  }
+
+  .intro h1 {
+    font-size: 60px;
+  }
+
+  .hero-img {
+    flex-basis: 10rem;
+  }
+
+  .reveal-text,
+  .reveal-img {
+    width: 0px;
+  }
+
+  footer h1 {
+    font-size: 80px;
+  }
+
+  footer .col-left {
+    margin-left: 70px;
+  }
+
+  footer .col-right {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project1 .container,
+  .project2 .container {
+    height: 520px;
+
+    a {
+      margin: initial;
+    }
+    h2 {
+      font-size: 2.8rem;
+    }
+    .hero-img {
+      flex-basis: 10rem;
+    }
+  }
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  .slide {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .hero-desc {
+    padding: 0;
+  }
+  .hero-img {
+    padding-top: 4rem;
+  }
+  /* .hero-img img {
+    width: 75%;
+  } */
+  .hero-desc h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+  }
+  .hero-desc p {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+  .project2-text p {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .project2-texth h1 {
+    margin: 2rem 0rem;
+  }
+  .project2-nr {
+    font-size: 8rem;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-links {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .contact p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .intro h1 {
+    margin-top: 45vh;
+  }
+
+  .slide {
+    display: none;
+    pointer-events: none;
+  }
+
+  .wrapper1 {
+    display: block;
+
+    .about-me {
+      .container {
+        height: 520px;
+      }
+      a {
+        margin: initial;
+      }
+      h2 {
+        font-size: 3.6rem;
+      }
+    }
+  }
+
+  .project1 .container {
+    height: 580px;
+  }
+
+  .about .first-col img {
+    width: 700px;
+  }
+
+  .about .first-col h1 {
+    font-size: 140px;
+  }
+
+  .about p {
+    font-size: 22px;
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+
+  .skills .title {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .wrapper1 {
+    .about-me .container {
+      margin-left: 100px;
+      margin-right: 100px;
+      height: 400px;
+      padding: 40px 50px 65px;
+      overflow: hidden;
+    }
+  }
+
+  .project1 .container,
+  .project2 .container {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 400px;
+    padding: 40px 50px 65px;
+  }
+
+  .wrapper1 .intro h1 {
+    font-size: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 50px;
+    margin-bottom: 30vh;
+  }
+
+  .wrapper1 .text-title h1 {
+    font-size: 1.8rem;
+  }
+
+  footer .col-left h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper1 {
+    .about-me .container {
+      margin-left: 100px;
+      margin-right: 100px;
+      height: 300px;
+      padding: 35px 50px 60px;
+      overflow: hidden;
+    }
+  }
+
+  .project1 .container,
+  .project2 .container {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 300px;
+    padding: 35px 50px 60px;
+    overflow: hidden;
+  }
+  .wrapper1 {
+    .about-me h2 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+
+  form input,
+  form textarea {
+    padding: 20px 26px;
+  }
+
+  form {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .wrapper {
+    width: 500px;
+  }
+
+  .contact-title {
+    font-size: 60px;
+  }
+}
+
+.project1 h2,
+.project2 h2 {
+  font-size: 40px;
+  line-height: 45px;
+}
+
+@media screen and (max-width: 630px) {
+  .wrapper1 {
+    .about-me .container {
+      margin-left: 40px;
+      margin-right: 40px;
+      height: 300px;
+      padding: 35px 50px 60px;
+      overflow: hidden;
+    }
+
+    .text-title h1 {
+      font-size: 1.3rem;
+    }
+    .intro h1 {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 30px;
+    }
+  }
+
+  .skills .title {
+    font-size: 70px;
+    letter-spacing: 0px;
+  }
+
+  .skills .cards,
+  .btn-container {
+    max-width: 750px;
+    margin-left: 60px;
+  }
+
+  .skills .btn {
+    font-size: 15px;
+    padding: 18px 36px;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    gap: 20px;
+  }
+  .project1 .container,
+  .project2 .container {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 300px;
+    padding: 35px 50px 60px;
+    overflow: hidden;
+  }
+
+  footer .col-right a {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  footer .col-left h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me .hero-img {
+    align-self: center;
+    object-fit: cover;
+  }
+
+  .about-me .container .hero-img img {
+    margin-top: 100px;
+  }
+
+  .wrapper1 .about-me h2 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  .hero-img {
+    padding-top: 10rem;
+  }
+
+  .explore {
+    font-size: 17px;
+    margin-top: 30px;
+  }
+
+  .wrapper1 {
+    .about-me .container {
+      margin-left: 40px;
+      margin-right: 40px;
+      height: 360px;
+      padding: 40px 50px 60px;
+      overflow: hidden;
+    }
+
+    .intro h1 {
+      font-size: 27px;
+      line-height: 34px;
+    }
+  }
+
+  .project1 .container,
+  .project2 .container {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 360px;
+    padding: 20px 70px 40px;
+    overflow: hidden;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  .project1 .hero-desc h2 {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+  .project2 .hero-desc h2 {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+  .wrapper1 .text-title h1 {
+    font-size: 0.9rem;
+  }
+
+  footer .col-right a {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  footer .col-left h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills .title {
+    font-size: 37px;
+    letter-spacing: 0px;
+  }
+
+  .about .first-col img {
+    width: 300px;
+    top: -12px;
+    right: 20px;
+  }
+}
+/* Scroll btn animacija */
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 30%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+.thanks-title {
+  text-align: center;
+  margin-top: 50vh;
+  font-size: 4rem;
+}

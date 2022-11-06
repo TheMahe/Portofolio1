@@ -1,0 +1,63 @@
+::selection {
+  color: #fff;
+  background: #0d6efd;
+}
+.wrapper {
+  width: 715px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+
+.contact-title {
+  text-align: center;
+  margin-top: 30vh;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  margin-bottom: 30px;
+  padding: 24px 30px;
+  border-style: none;
+  box-shadow: inset 0 0 0 1px #ccc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 18px;
+  line-height: 22px;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+textarea {
+  min-height: 150px;
+  font-family: inherit;
+}
+
+form button {
+  padding: 24px 48px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: 0.2s ease all;
+}
+
+form button:hover {
+  background-color: #222;
+}

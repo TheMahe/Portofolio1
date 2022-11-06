@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+  background-color: #111;
+}
+.container {
+  margin: 0 auto;
+}
+
+.slide {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last .slide {
+  min-height: 40vh;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-title h1 {
+  font-size: 2.4rem;
+}
+
+.seperator {
+  height: 1px;
+  width: 100%;
+  background-color: #ddd;
+  margin-top: 100px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+  padding-top: 100px;
+  padding-bottom: 160px;
+  margin-top: 100px;
+  z-index: 999;
+}
+
+footer .col-left span {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+footer h1 {
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 600;
+  margin-bottom: 90px;
+}
+
+footer .col-right {
+  justify-self: flex-end;
+}
+
+footer .col-right a {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+  transition: all 0.2s ease 0s, opacity 200ms ease 0s;
+}
+
+footer .col-right:hover a {
+  opacity: 0.3;
+}
+
+footer .col-right:hover a:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero-img {
+    height: 50vh;
+  }
+  .fashion-text h1 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+  }
+  .fashion-text p {
+    font-size: 1.2rem;
+  }
+  .fashion-img img {
+    height: 50vh;
+    object-position: top;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .hero-desc {
+    padding: 0;
+  }
+  .hero-img {
+    padding-top: 4rem;
+  }
+  /* .hero-img img {
+    width: 75%;
+  } */
+  .hero-desc h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+  }
+  .hero-desc p {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .explore {
+    width: 60%;
+    margin: auto;
+  }
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+  .fashion-text p {
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+  .fashion-texth h1 {
+    margin: 2rem 0rem;
+  }
+  .fashion-nr {
+    font-size: 8rem;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-links {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .contact p {
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  font-size: 3rem;
+  flex-basis: 30rem;
+}
+
+.nav-links h3 {
+  padding: 3rem 0;
+}
+
+.contact {
+  flex-basis: 30rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  transform: translate3d(0px, 0px, 0px) scale(1.00212, 1.00212);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 980px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+/* Scroll btn animacija */
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 30%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+#logo {
+  color: black;
+  font-family: "Abril Fatface";
+}
+.nav-header {
+  position: fixed;
+  top: 0;
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  width: 92%;
+  padding: 2rem 0rem;
+  z-index: 2;
+  background-color: transparent;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu .list li {
+  display: inline-block;
+}
+
+.menu .list li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+
+.line1,
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: #000;
+  pointer-events: none;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  font-size: 3rem;
+  flex-basis: 30rem;
+}
+
+.nav-links h3 {
+  padding: 3rem 0;
+}
+
+.contact {
+  flex-basis: 30rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  transform: translate3d(0px, 0px, 0px) scale(1.00212, 1.00212);
+  pointer-events: none;
+}
+
+.title {
+  position: relative;
+}
+
+.t-swipe1 {
+  background: rgb(86, 124, 228);
+}
+
+.t-swipe2 {
+  background: rgb(167, 110, 231);
+}
+.t-swipe3 {
+  background: rgb(255, 139, 93);
+}
+
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+
+body.hide {
+  overflow: hidden;
+}

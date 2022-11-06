@@ -1,0 +1,346 @@
+#logo {
+  color: black;
+  font-family: "Abril Fatface";
+}
+.nav-header {
+  position: fixed;
+  top: 0;
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000 !important;
+  width: 92%;
+  padding: 2rem 0rem;
+  z-index: 200;
+  background-color: transparent;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project1 .hero-desc h2 {
+  margin-top: 30px;
+}
+.project2 .hero-desc h2 {
+  margin-top: 30px;
+}
+
+.menu div {
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+}
+
+.line1,
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: #000;
+  pointer-events: none;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro .scroll-down {
+  left: 49%;
+}
+
+.intro h1 {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 70px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  flex-basis: 20rem;
+}
+
+.hero-desc h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 600;
+  transform-style: preserve-3d;
+  transition: transform 200ms ease 0s;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  z-index: 999;
+}
+
+.explore {
+  background: none;
+  color: black;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 200ms ease 0s;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+
+.hero-img {
+  flex: 1;
+  flex-basis: 25rem;
+  overflow: hidden;
+}
+
+.about-me .container {
+  display: flex;
+  justify-content: center;
+  max-width: 1240px;
+  height: 700px;
+  background-color: #f6f6f6;
+  z-index: 2;
+  border: 0;
+  padding: 90px 100px 80px;
+  transition: all 0.8s ease 0s, transform 200ms ease 0s;
+  transform: scaleX(1) scaleY(1);
+}
+
+.about-me .container:hover {
+  transform: scaleX(0.95) scaleY(0.95);
+}
+
+.about-me .container:hover h2 {
+  transform: translateX(20px) translateY(20px) translateZ(0px);
+}
+
+.about-me .container:hover .explore {
+  transform: translateX(20px) translateY(-20px) translateZ(0px);
+}
+
+.about-me .hero-img {
+  align-self: flex-end;
+}
+
+.about-me .hero-img img {
+  width: 100%;
+  display: block;
+  z-index: 1;
+  background-color: #f6f6f6;
+  border: 0;
+}
+
+/* ///////////////////////////////// */
+/* ABOUT SECTION */
+
+.project1 .container {
+  display: flex;
+  justify-content: center;
+  max-width: 1240px;
+  height: 700px;
+  background-color: #fcf0f2;
+  z-index: 2;
+  border: 0;
+  padding: 90px 100px 80px;
+  transition: all 0.2s ease 0s, transform 200ms ease 0s;
+  transform: scaleX(1) scaleY(1);
+}
+
+.project1 .container .title {
+  transform-style: preserve-3d;
+  transition: transform 200ms ease 0s;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+
+.project1 .container:hover {
+  transform: scaleX(0.95) scaleY(0.95);
+}
+
+.project1 .container:hover .title {
+  transform: translateX(20px) translateY(20px) translateZ(0px);
+}
+
+.project1 .container:hover .explore {
+  transform: translateX(20px) translateY(-20px) translateZ(0px);
+}
+
+.project1 .hero-img {
+  align-self: flex-end;
+}
+
+.project1 .hero-img img {
+  width: 100%;
+  display: block;
+  z-index: 1;
+  border: 0;
+}
+
+.project1 .hero-desc h2 {
+  color: #730011;
+  font-size: 70px;
+  max-width: 590px;
+}
+.project1 .hero-desc span {
+  text-transform: uppercase;
+  color: #730011;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.project1 .explore {
+  color: #730011;
+  border-color: #730011;
+}
+
+/* ///////////////////////////////// */
+/* Projec2 SECTION */
+
+.project2 .container {
+  display: flex;
+  justify-content: center;
+  max-width: 1240px;
+  height: 700px;
+  background-color: #f8f7fe;
+  z-index: 2;
+  border: 0;
+  margin-top: 100px;
+  padding: 90px 100px 80px;
+  transition: all 0.2s ease 0s, transform 200ms ease 0s;
+  transform: scaleX(1) scaleY(1);
+}
+
+.project2 .container .title {
+  transform-style: preserve-3d;
+  transition: transform 200ms ease 0s;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}
+
+.project2 .container:hover {
+  transform: scaleX(0.95) scaleY(0.95);
+}
+
+.project2 .container:hover .title {
+  transform: translateX(20px) translateY(20px) translateZ(0px);
+}
+
+.project2 .container:hover .explore {
+  transform: translateX(20px) translateY(-20px) translateZ(0px);
+}
+
+.project2 .hero-img {
+  align-self: flex-end;
+}
+
+.project2 .hero-img img {
+  width: 100%;
+  display: block;
+  z-index: 1;
+  border: 0;
+}
+
+.project2 .hero-desc h2 {
+  color: #241f60;
+  font-size: 70px;
+  max-width: 590px;
+}
+.project2 .hero-desc span {
+  text-transform: uppercase;
+  color: #241f60;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.project2 .explore {
+  color: #241f60;
+  border-color: #241f60;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+  color: #000;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+  color: #000 !important;
+}
+.nav-links {
+  margin-top: 40vh;
+  padding-top: 20px;
+  z-index: 20;
+}
+
+.nav-links a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease all;
+}
+
+.nav-links:hover a {
+  opacity: 0.3;
+}
+
+.nav-links:hover a:hover {
+  opacity: 1;
+}
+
+.contact {
+  flex-basis: 30rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  transform: translate3d(0px, 0px, 0px) scale(1.00212, 1.00212);
+  pointer-events: none;
+}
+
+.title {
+  position: relative;
+}
+
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+
+body.hide {
+  overflow: hidden;
+}

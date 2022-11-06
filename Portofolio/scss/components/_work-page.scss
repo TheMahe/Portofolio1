@@ -1,0 +1,35 @@
+.work-title {
+  margin-top: 20vh;
+  margin-bottom: 15vh;
+  text-align: center;
+}
+
+.work-title h1 {
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 600;
+}
+
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.swipe1 {
+  background-color: #343a40;
+  z-index: 5;
+}
+
+.swipe2 {
+  background-color: #495057;
+  z-index: 4;
+}
+
+.swipe3 {
+  background-color: #f8f9fa;
+  z-index: 3;
+}
